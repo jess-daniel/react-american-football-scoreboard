@@ -22,7 +22,7 @@ const BottomRow = () => {
         <h3 className="quarter__title">Quarter</h3>
         <div className="quarter__value">{quarter}</div>
       </div>
-      <button onClick={() => setQuarter(quarter + 1)} className="awayButtons__fieldGoal">Next Quarter</button>
+      <button onClick={() => setQuarter(quarter < 4 ? quarter + 1 : 1)} className="awayButtons__fieldGoal">Next Quarter</button>
     </div>
   );
 };
